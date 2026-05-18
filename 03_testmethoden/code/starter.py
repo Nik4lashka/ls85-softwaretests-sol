@@ -122,6 +122,6 @@ if __name__ == "__main__":
     print(f"TC04: 100/False/VIP2024 → {ergebnis} (erwartet: NORMAL)")
     # TODO: Ergänze weitere Testfälle für vollständige Branch Coverage
 
-    # Meiner Meinung nach ist das die Branch und Statement coverage (?)
+    #* Meiner Meinung nach ist das die Branch und Statement coverage (?)
 
     # Halte fest, welche Zeilen von welchem Testfall abgedeckt werden.

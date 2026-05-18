@@ -79,3 +79,35 @@ Fülle die Tabelle aus:
 | Typische Werkzeuge | Fertige Anwendung testen | Test-Cases und Kontrollflussgraphen |
 | Vorteil | Unabhängig vom Code         | Findet innere Logikfehler |
 | Nachteil | Interne Fehler werden nicht aufgedeckt | Fehlende Anforderungen werden nicht Aufgedeckt|
+
+
+## Aufgabe 4 – IHK-Stil
+
+**(a)** Erstellen Sie einen Kontrollflussgraphen für diese Funktion. Benennen Sie alle Knoten und Kanten.
+
+1.      if gewicht_kg <= 0 -- 2. -- ValueError()
+              |
+              |
+3.       if express -- 4. -- if gewicht_kg <= 5 -- 5. -- return 8.90
+                                    |
+                                    |
+6.                              return 14.90 
+              |
+              |            
+7.      if gewicht_gk <= 5 -- 8. -- return 3.90
+              |
+              |
+         return 6.90
+
+**(b)** Wie viele Testfälle sind für eine vollständige **Zweigüberdeckung** erforderlich? Listen Sie diese auf.
+
+Es sind 5 Testfälle notwendig.
+1. (0 , true)
+2. (2, true)
+3. (2, false)
+4. (7, true)
+5. (7, false)
+
+**(c)** Welche Testfälle würden Sie zusätzlich aus **Black-Box-Sicht** (Grenzwertanalyse) ergänzen?
+
+Kommt erst in Baustein 04 ich lasse das jetzt aus Bequemlichkeit weg :)
