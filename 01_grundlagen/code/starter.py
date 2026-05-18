@@ -70,15 +70,16 @@ if __name__ == "__main__":
 #
 # | Maßnahme                            | Statisch | Dynamisch |
 # |-------------------------------------|----------|-----------|
-# | Code Review durch einen Kollegen    | TODO     | TODO      |
-# | Programm mit Testdaten ausführen    | TODO     | TODO      |
-# | Syntaxprüfung durch den Editor      | TODO     | TODO      |
-# | Walkthroughs im Team                | TODO     | TODO      |
-# | Unit-Tests laufen lassen            | TODO     | TODO      |
-# | Checklisten für Codestruktur        | TODO     | TODO      |
+# | Code Review durch einen Kollegen    |    x     |           |
+# | Programm mit Testdaten ausführen    |          |     x     |
+# | Syntaxprüfung durch den Editor      |    x     |           |
+# | Walkthroughs im Team                |    x     |           |
+# | Unit-Tests laufen lassen            |          |     x     |
+# | Checklisten für Codestruktur        |    x     |           |
 #
 # Warum reicht statisches Testen allein nicht aus?
-# TODO: Deine Erklärung hier (2 Sätze)
+#* Beim Manuellen Testen ist es immer möglich dass Fehler nicht auffallen - oft fehlt einem der
+#* Einblick in den Code, wenn es nicht der eigene ist und man "nur mal eben drüber schaut"
 
 
 # ============================================================
