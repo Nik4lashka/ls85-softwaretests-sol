@@ -8,6 +8,14 @@ Startvorlage – bearbeite diese Datei für deine Aufgaben.
 # Aufgabe 1 – Black-Box-Test (Implementierung absichtlich unten)
 # ============================================================
 
+# | TC-Nr | Eingabe (User/PW) | Erwartete Ausgabe | Kategorie        |
+# | TC01  | admin / geheim123 | true              | Gültiger Login   |
+# | TC02  | test / abcdefghij | false             | Ungültiger Login |
+# | TC03  | niklas / niklas12 | false             | Ungültiger Login |
+# | TC04  | kai / brozmann    | false             | Ungültiger Login |
+# | TC05  | admin / geheim123 | true              | Gültiger Login   |
+# | TC06  | kein / bockmehr   | false             | Ungültiger Login |
+
 def authentifiziere_benutzer(benutzername: str, passwort: str) -> bool:
     """
     Prüft, ob Benutzername und Passwort gültig sind.
@@ -46,9 +54,25 @@ if __name__ == "__main__":
     ergebnis = authentifiziere_benutzer("admin", "geheim123")
     print(f"TC01: admin/geheim123 → {ergebnis} (erwartet: True)")
 
-    # TC02: TODO
-    # TC03: TODO
-    # ...
+    # TC02:
+    ergebnis = authentifiziere_benutzer("test", "abcdefghij")
+    print(f"TC01: test/abcdefghij → {ergebnis} (erwartet: False)")
+
+    # TC03:
+    ergebnis = authentifiziere_benutzer("niklas", "niklas12")
+    print(f"TC01: niklas/niklas12 → {ergebnis} (erwartet: False)")
+
+    # TC04:
+    ergebnis = authentifiziere_benutzer("kai", "brozmann")
+    print(f"TC01: kai/brozmann → {ergebnis} (erwartet: False)")
+
+    # TC05:
+    ergebnis = authentifiziere_benutzer("admin", "geheim123")
+    print(f"TC01: admin/geheim123 → {ergebnis} (erwartet: True)")
+
+    # TC06:
+    ergebnis = authentifiziere_benutzer("kein", "bockmehr")
+    print(f"TC01: kein/bockmehr → {ergebnis} (erwartet: False)")
 
 
 # ============================================================
