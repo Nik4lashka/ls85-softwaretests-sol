@@ -88,11 +88,16 @@ if __name__ == "__main__":
 
 # Prinzip 2 – Vollständiges Testen ist unmöglich:
 # Beispiel aus dem Berufsalltag:
-# TODO: Deine Antwort hier
+#* Bevor ein neues Feature bei einem Kunden installiert wird, wird es getestet. Jedoch
+#* passiert es trotzdem, dass sich der Kunde mit aufgetretenen Fehlern meldet. Man kann
+#* nicht alle Möglichkeiten testen
 
 # Prinzip 4 – Defect Clustering:
 # Beispiel aus dem Berufsalltag:
-# TODO: Deine Antwort hier
+#* Die meisten Fehler stecken in einem kleinen Teil vom Code. Wenn man ein neues Feature
+#* implementiert und dann tauchen Fehler auf dann ist es sehr wahrscheinlich dass die Fehler
+#* durch das neue Feature verursacht werden
 
 # Welches Prinzip überrascht dich? Warum?
-# TODO: Deine Antwort hier
+#* Das Pestizid-Paradoxon, weil es schwer ist nach "erfolgreichem testen" neue Testfälle zu
+#* erstellen
