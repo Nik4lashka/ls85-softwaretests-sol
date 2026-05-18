@@ -109,7 +109,19 @@ def kategorisiere_bestellung(betrag: float, ist_neukunde: bool, gutscheincode: s
 if __name__ == "__main__":
     print("\n=== Aufgabe 2 – White-Box Coverage: kategorisiere_bestellung ===")
 
-    # TODO: Ergänze Testfälle für vollständige Statement Coverage
+    ergebnis = kategorisiere_bestellung(0, False, "")
+    print(f"TC01: 0/False/.. → {ergebnis} (erwartet: )")
+
+    ergebnis = kategorisiere_bestellung(600, True, "")
+    print(f"TC02: 600/True/.. → {ergebnis} (erwartet: )")
+
+    ergebnis = kategorisiere_bestellung(600, False, "")
+    print(f"TC03: 600/False/.. → {ergebnis} (erwartet: )")
+
+    ergebnis = kategorisiere_bestellung(100, False, "")
+    print(f"TC04: 100/False/VIP2024 → {ergebnis} (erwartet: )")
     # TODO: Ergänze weitere Testfälle für vollständige Branch Coverage
+
+    # Meiner Meinung nach ist das die Branch und Statement coverage (?)
 
     # Halte fest, welche Zeilen von welchem Testfall abgedeckt werden.
