@@ -16,6 +16,16 @@ from typing import List, Dict
 
 
 # ============================================================
+# Aufgabe 2 – Die vier Teststufen
+# ============================================================
+# (a)
+# Unit-Test	       | prüfen ob der Gesamtpreis richtig berechnet wird
+# Integrationstest | den bestellprozess testen (Warenkorb + Gesamtpreis berechnen)
+# Systemtest	   | gesamtes System testen (Besetellung aufgeben und verarbeiten)
+# Abnahmetest	   | Kunde prüft ob das System alle Anforderungen erfüllt
+
+
+# ============================================================
 # Webshop-Komponenten (vereinfacht)
 # ============================================================
 
@@ -69,17 +79,17 @@ if __name__ == "__main__":
     # TODO: Test 1 – Normaler Einkauf ohne Rabatt
     # Erwartetes Ergebnis: 69.97
     print("Test 1 – Kein Rabatt:")
-    # Dein Code hier
+    print(berechne_gesamtpreis(warenkorb_normal, 0))
 
     # TODO: Test 2 – Einkauf mit 10 % Rabatt
     # Erwartetes Ergebnis: 62.97
     print("\nTest 2 – 10 % Rabatt:")
-    # Dein Code hier
+    print(berechne_gesamtpreis(warenkorb_normal, 10))
 
     # TODO: Test 3 – Leerer Warenkorb (Sonderfall)
     # Erwartetes Ergebnis: 0.0 (keine Exception!)
     print("\nTest 3 – Leerer Warenkorb:")
-    # Dein Code hier
+    print(berechne_gesamtpreis(warenkorb_leer, 0))
 
 
 # ============================================================
