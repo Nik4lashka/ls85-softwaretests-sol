@@ -56,3 +56,24 @@ Ordne konkrete Testbeispiele jeder Teststufe zu.
 Warum oder warum nicht?
 
 Das hängt von dem Ausmaß der Änderung ab. Wenn viele neue Sachen dazu kommen dann braucht es neue Unit-Tests. Wenn aber nur z.B. nur eine Berechnung angepasst wird dann wird der Regressionstest ausreichen.
+
+
+## Tandem-Aufgabe
+>Person A:
+Unit-Test: Entwickler
+- Klappen die einzelnen Funktionen?
+
+Integrationstest: Entwickler
+- Arbeiten die Module richtig zusammen?
+
+>Person B:
+Systemtest: Entwicklerteam
+- Sind alle funktionalitäten gegeben
+- Können Schüler hinzugefügt werden
+- Kann man Schüler bearbeiten
+- Wird der Stundenplan angezeigt
+- Qualität gegeben?
+- Software schnell?
+
+Abnahmetest: Schule
+- Alle alltäglichen Aufgaben testen
