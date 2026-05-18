@@ -93,12 +93,12 @@ if __name__ == "__main__":
 
 
 # ============================================================
-# Aufgabe 1 – Tabelle Teststufen (als Kommentar)
+# Aufgabe 3 – Funktionale vs. Nicht-Funktional
 # ============================================================
 
-# | Beschreibung                                           | Teststufe |
-# |--------------------------------------------------------|-----------|
-# | Testet einzelne Funktionen oder Methoden isoliert      | TODO      |
-# | Prüft das Zusammenspiel mehrerer Module                | TODO      |
-# | Testet das gesamte System gegen die Anforderungen      | TODO      |
-# | Auftraggeber prüft, ob seine Anforderungen erfüllt sind| TODO      |
+# Login mit korrekten Zugangsdaten klappt		        | Funktinal
+# Seite lädt in unter 2 Sekunden		                | Nicht-Funktional
+# Bestellung wird korrekt in der Datenbank gespeichert  | Funktional
+# System ist bei 1000 gleichzeitigen Nutzern stabil		| Nicht-Funktional
+# Passwort-Reset-Mail wird verschickt		            | Funktional
+# Alle Texte sind auf Deutsch (Lokalisierung)           | Nicht-Funktional
