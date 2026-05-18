@@ -105,6 +105,24 @@ def kategorisiere_bestellung(betrag: float, ist_neukunde: bool, gutscheincode: s
     return prioritaet
 
 
+def aufgaben_machen_oder_nicht(motivation: int, lehrer_anwesend: bool, zeit_übrig: int) -> bool:
+    """
+    Gibt als Ergebnis ob der Schüler die Aufgaben machen sollte oder es lieber auf
+    wann anders verschieben sollte
+    """    
+    if motivation < 33:
+        return False
+    
+    if motivation >= 50:
+        if zeit_übrig < 30:
+            return False
+        
+        if motivation < 75 and lehrer_anwesend == False:
+            return False
+        
+    return True
+
+
 # Aufgabe 2b+c) – Testfälle für Statement und Branch Coverage:
 if __name__ == "__main__":
     print("\n=== Aufgabe 2 – White-Box Coverage: kategorisiere_bestellung ===")
@@ -125,3 +143,4 @@ if __name__ == "__main__":
     #* Meiner Meinung nach ist das die Branch und Statement coverage (?)
 
     # Halte fest, welche Zeilen von welchem Testfall abgedeckt werden.
+
