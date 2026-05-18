@@ -7,6 +7,15 @@ from typing import List, Dict
 
 
 # ============================================================
+# Aufgabe 1 – Die vier Teststufen
+# ============================================================
+# Testet einzelne Funktionen oder Methoden isoliert          	| Unit-Test
+# Prüft das Zusammenspiel mehrerer Module	                    | Integrationstest
+# Testet das gesamte System gegen die Anforderungen	            | Systemtest
+# Der Auftraggeber prüft, ob seine Anforderungen erfüllt sind	| Abnahmetest
+
+
+# ============================================================
 # Webshop-Komponenten (vereinfacht)
 # ============================================================
 
