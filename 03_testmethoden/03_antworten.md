@@ -65,3 +65,17 @@ Man braucht 4 Testfälle.
 | TC02  | betrag = 600, True, ""         |
 | TC03  | betrag = 600, False, ""        |
 | TC04  | betrag = 100, False, "VIP2024" |
+
+
+## Aufgabe 3 – Methoden vergleichen 🟡
+
+Fülle die Tabelle aus:
+
+| Merkmal | Black-Box | White-Box |
+|---------|-----------|-----------|
+| Codekenntnis notwendig? | Nein        | Ja                        |
+| Aus wessen Perspektive? | Endanwender | Entwickler                |
+| Was wird geprüft? | Funktionalität    | Struktur                  |
+| Typische Werkzeuge | Fertige Anwendung testen | Test-Cases und Kontrollflussgraphen |
+| Vorteil | Unabhängig vom Code         | Findet innere Logikfehler |
+| Nachteil | Interne Fehler werden nicht aufgedeckt | Fehlende Anforderungen werden nicht Aufgedeckt|
