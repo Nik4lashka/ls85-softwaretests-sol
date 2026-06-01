@@ -29,7 +29,7 @@ Eine Äquivalenzklasse ist eine Gruppe von Testwerten, die alle das gleiche Erge
 | AK1 | 1 | 1500 | Ungültig |
 | AK2 | 2 | 500  | Gültig   |
 | AK3 | 3 | 0    | Ungültig |
-| AK4 | 4 | -500 | Gültig   |
+| AK4 | 4 | abc  | Ungültig   |
 
 **(b)** Ergänze die Tabelle um Grenzwerttestfälle:
 
@@ -40,3 +40,20 @@ Eine Äquivalenzklasse ist eine Gruppe von Testwerten, die alle das gleiche Erge
 | GW3 | 999  | Gültig   |
 | GW4 | 1000 | Ungültig |
 | GW5 | -1 | Ungültig   |
+
+
+## Aufgabe 2 – Äquivalenzklassen für Passwortstärke
+
+**(a)** Erstelle die Äquivalenzklassentabelle für alle vier Regeln kombiniert.
+Hinweis: Jede Regel erzeugt eigene gültige/ungültige Klassen!
+
+| AK-Nr | Klasse | Repräsentativer Wert | Gültig / Ungültig |
+|-------|--------|---------------------|-------------------|
+| AK1 | Länge zu kurz/lang | 123 | Ungültig |
+| AK2 | Länge passt | Test1234 | Gültig |
+| AK3 | Enthält keinen Großbuchstaben  | test1234 | Ungültig |
+| AK4 | Enthält Großbuchstaben | Test1234 | Gültoig |
+| AK5 | Enthält keine Ziffer | TestTest | Ungültig |
+| AK6 | Enthält eine Ziffer | Test1234 | Gültig |
+| AK7 | Enthält ein Leerzeichen | Test 1234 | Ungültig |
+| AK8 | Enthält kein Leerzeichen | Test1234 | Gültig |

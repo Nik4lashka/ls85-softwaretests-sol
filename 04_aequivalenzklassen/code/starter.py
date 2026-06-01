@@ -42,7 +42,25 @@ def pruefe_passwort(passwort: str) -> bool:
     """
     # TODO: Implementiere die Prüflogik
     # Hinweis: str.isupper(), str.isdigit(), ' ' in passwort
-    pass
+
+    hasUpper  = False
+    hasNumber = False 
+    hasWhite  = False
+
+    if len(passwort) < 8 or len(passwort) > 64:
+        return False
+
+    for char in passwort:
+        if char.isupper():
+            hasUpper = True
+
+        if char.isdigit():
+            hasNumber = True
+        
+        if char == ' ':
+            hasWhite = True
+
+    return hasUpper and hasNumber and not hasWhite
 
 
 # ============================================================
