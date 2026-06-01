@@ -57,3 +57,23 @@ Hinweis: Jede Regel erzeugt eigene gültige/ungültige Klassen!
 | AK6 | Enthält eine Ziffer | Test1234 | Gültig |
 | AK7 | Enthält ein Leerzeichen | Test 1234 | Ungültig |
 | AK8 | Enthält kein Leerzeichen | Test1234 | Gültig |
+
+
+## Aufgabe 3 – Grenzwertanalyse: Altersverifikation
+
+**(a)** Bestimme alle Grenzwerte und erstelle eine Grenzwerttabelle mit:
+- Unterer Grenzwert der Klasse
+- Wert genau an der Grenze
+- Oberer Grenzwert der Klasse
+
+| GW-Nr | Grenzwert | oberer wert | unterer wert |
+|-------|-----------|---------------------|
+| GW1 | 11/0 | 12 | -1 |
+| GW2 | 12/17 | 18 | 11 |
+| GW3 | 18 | / | 17 |
+
+
+**(b)** Welche Fälle würden erfahrene Tester zusätzlich einbeziehen?
+(Denke an ungültige Werte wie negative Zahlen, 0, 150, Kommazahlen)
+
+- Negative Zahlen, unrealistische Alter
