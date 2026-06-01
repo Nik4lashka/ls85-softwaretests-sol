@@ -20,8 +20,7 @@ def validiere_menge(menge) -> bool:
     Returns:
         True wenn gültig, False wenn ungültig.
     """
-    # TODO: Implementiere die Validierungslogik
-    pass
+    return (menge >= 1 and menge <= 999)
 
 
 # ============================================================
@@ -80,9 +79,14 @@ if __name__ == "__main__":
 
     # Äquivalenzklassen testen:
     # TODO: Gültige Klasse (z. B. menge = 50)
+    ergebnis = validiere_menge(50)
+    print(f" validiere_menge(50) -> {ergebnis}")
     # TODO: Ungültige Klasse Untergrenze (z. B. menge = 0)
+    ergebnis = validiere_menge(0)
+    print(f" validiere_menge(0) -> {ergebnis}")
     # TODO: Ungültige Klasse Obergrenze (z. B. menge = 1000)
-    # TODO: Falscher Typ (z. B. menge = "viel")
+    ergebnis = validiere_menge(1000)
+    print(f" validiere_menge(1000) -> {ergebnis}")
 
     # Grenzwerte testen:
     # TODO: Grenzwert 0, 1, 999, 1000
