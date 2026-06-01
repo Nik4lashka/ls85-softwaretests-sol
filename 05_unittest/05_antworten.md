@@ -15,9 +15,9 @@ rabatt_setzen()
 außerdem wird die Klasse TestBestellsystem (die UnitTest Klasse) verwendet mit den assert Methoden.
 
 **(c)** Was bedeutet `assertAlmostEqual` und warum wird es hier statt `assertEqual` verwendet?
-
 Prüft ob zwei Fließkommazahlen "fast gleich" sind. Wird benutzt um bei rundungsfehlern trotzdem den test zu bestehen
 
 **(d)** Was passiert, wenn `test_negativer_rabatt_wirft_fehler` fehlschlägt?
 Was wäre dann das Problem in der Implementierung?
 
+Ich glaube die frage verstehe ich nicht ganz. 
