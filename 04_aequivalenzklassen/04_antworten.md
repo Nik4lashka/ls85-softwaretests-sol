@@ -77,3 +77,54 @@ Hinweis: Jede Regel erzeugt eigene gültige/ungültige Klassen!
 (Denke an ungültige Werte wie negative Zahlen, 0, 150, Kommazahlen)
 
 - Negative Zahlen, unrealistische Alter
+
+
+## Aufgabe 4 – IHK-Stil
+
+**(a)** Ermitteln Sie alle Äquivalenzklassen (gültige und ungültige).
+
+ÄK1: 0-29   | 6
+ÄK2: 30-49  | 5
+ÄK3: 50-66  | 4
+ÄK4: 67-80  | 3
+ÄK5: 81-91  | 2
+ÄK6: 92-100 | 1
+ÄK71: x < 0         | ungültig
+ÄK8: x > 100        | ungültig
+ÄK9: keine ganzzahl | ungültig
+
+
+**(b)** Erstellen Sie eine vollständige Grenzwerttabelle für alle Notengrenzen.
+
+0
+
+29 30
+
+49 50
+
+66 67
+
+80 81
+
+91 92
+
+100
+
+**(c)** Welche Eingabewerte würden Sie als Tester wählen, um mit möglichst wenigen Testfällen alle Klassen und Grenzwerte abzudecken? Begründen Sie Ihre Wahl.
+-1
+0
+29
+30
+49
+50
+66
+67
+80
+81
+91
+92
+100
+101
+22,5
+
+Damit sind alle ÄK abgedeckt

@@ -82,8 +82,21 @@ def berechne_note(punkte: int) -> int:
     Raises:
         ValueError: Wenn punkte außerhalb [0, 100] liegt.
     """
-    # TODO: Implementiere die Notenberechnung
-    pass
+    if not 0 <= punkte <= 100:
+        raise ValueError("Punktzahl muss zwischen 0 und 100 liegen.")
+
+    if punkte >= 92:
+        return 1
+    elif punkte >= 81:
+        return 2
+    elif punkte >= 67:
+        return 3
+    elif punkte >= 50:
+        return 4
+    elif punkte >= 30:
+        return 5
+    else:
+        return 6
 
 
 # ============================================================
