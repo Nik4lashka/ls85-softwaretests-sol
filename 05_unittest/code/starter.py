@@ -64,45 +64,48 @@ class TestKontorechner(unittest.TestCase):
 
     def test_einzahlen_positiver_betrag(self):
         """TODO: Prüfe, dass eine Einzahlung von 100 den Kontostand auf 100 setzt."""
-        # TODO: Deine Implementierung
-        pass
+        self.konto.einzahlen(100)
+        self.assertEqual(self.konto._kontostand, 100)
 
     def test_einzahlen_mehrere_betraege(self):
         """TODO: Prüfe, dass mehrere Einzahlungen korrekt addiert werden."""
-        # TODO: Deine Implementierung
-        pass
+        self.konto.einzahlen(100)
+        self.konto.einzahlen(50)
+        self.assertEqual(self.konto._kontostand, 150)
+
 
     def test_einzahlen_null_wirft_fehler(self):
         """TODO: Prüfe, dass Einzahlung von 0 einen ValueError wirft."""
-        # TODO: Nutze assertRaises (beide Varianten ausprobieren)
-        pass
+        with self.assertRaises(ValueError):
+            self.konto.einzahlen(0)
 
     def test_einzahlen_negativ_wirft_fehler(self):
         """TODO: Prüfe, dass negativer Betrag einen ValueError wirft."""
-        # TODO: Deine Implementierung
-        pass
+        with self.assertRaises(ValueError):
+            self.konto.einzahlen(-1)
 
     # --- Abheben ---
 
     def test_abheben_guthaben_vorhanden(self):
         """TODO: Einzahlen und dann korrekt abheben."""
-        # TODO: Deine Implementierung
-        pass
+        self.konto.einzahlen(100)
+        self.konto.abheben(50)
+        self.assertEqual(self.konto._kontostand, 50)
 
     def test_abheben_kein_guthaben(self):
         """TODO: Abhebung ohne Guthaben wirft ValueError."""
-        # TODO: Deine Implementierung
-        pass
+        with self.assertRaises(ValueError):
+            self.konto.abheben(50)
 
     def test_abheben_exakt_kontostand(self):
         """TODO: Abhebung des gesamten Kontostands (Grenzfall)."""
-        # TODO: Deine Implementierung
-        pass
+        self.konto.einzahlen(100)
+        self.konto.abheben(100)
+        self.assertEqual(self.konto._kontostand, 0)
 
     def test_kontostand_anfangswert(self):
         """TODO: Neues Konto hat Kontostand 0."""
-        # TODO: Deine Implementierung
-        pass
+        self.assertEqual(self.konto._kontostand, 0)
 
 
 # ============================================================

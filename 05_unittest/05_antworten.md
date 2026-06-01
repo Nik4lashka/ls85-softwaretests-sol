@@ -21,3 +21,13 @@ Prüft ob zwei Fließkommazahlen "fast gleich" sind. Wird benutzt um bei rundung
 Was wäre dann das Problem in der Implementierung?
 
 Ich glaube die frage verstehe ich nicht ganz. 
+
+
+## Aufgabe 1 – Erste Unit-Tests schreiben
+
+**(a)** Analysiere die Klasse: Welche Methoden hat sie? Was soll jede Methode tun?
+Es gibt zwei methoden. Eine zum einzaheln und eine zum abheben. beide manipulieren den Kontostand.
+
+**(c)** Führe die Tests aus und interpretiere die Ausgabe.
+Was bedeuten `.`, `F` und `E` in der Ausgabe?
+Ich sehe andere Ausgaben :)
